@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+	<head>
+		<title>KNOW NATURAL DISASTERS</title>
+		<link rel="shortcut icon" type="image/png" href="OTHERS/title-06.png"/>
+		<link href="mainmenupage.css" rel="stylesheet" type="text/css"/>
+		<script src="https://code.jquery.com/jquery-1.11.0.js" integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw=" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic" rel="stylesheet">
+	</head>
+
+	<style>
+      body {
+        font-family: 'Exo 2', sans-serif;
+      }
+    </style>
+
+	<body>
+
+<!------------------------------------------------------ The video -------------------------------------------------------->
+<video autoplay muted loop id="MyVideo">
+  <source src="VIDEO/MyVideo.mp4" type="video/mp4">
+</video>
+
+<!----------------------- iframe that doesn't play anything just to trigger the autoplay in the first load------------------------>
+<iframe src="VIDEO/silentsound.mp3" allow="autoplay" style="display:none"></iframe>
+
+<audio autoplay muted loop>
+    <source src="VIDEO/bm.mp3" type="audio/mp3">
+</audio>
+
+<button class="mute-audio"></button>
+
+<!-----------------------------------Javascript for mute and unmute audio------------------------------------------->
+<script>
+	$("audio").prop('muted', true);
+
+	$(".mute-audio").click(function () {
+	    if ($("audio").prop('muted')) {
+	        $("audio").prop('muted', false);
+	        $(this).addClass('unmute-audio');
+
+	    } else {
+	        $("audio").prop('muted', true);
+	        $(this).removeClass('unmute-audio');
+	    }
+	    console.log($("audio").prop('muted'))
+});
+</script>
+
+		<nav>
+			<ul>
+				<li class="sub-menu-parent">
+		      	 	<strong><a href="#" class="trigger">About</a></strong>
+		   	 	</li>
+
+				<li class="sub-menu-parent">
+		       		<strong><a href="#">Share</a></strong>
+		       			<ul class="sub-menu">
+                             <li>        <a href="https://www.facebook.com/sharer/sharer.php?u=http://naturaldisaster.esy.es/" target="_blank"><div class="imgcss1" /></div>        </a></li>
+                             <li>        <a href="https://twitter.com/home?status=http://naturaldisaster.esy.es/ "target="_blank"><div class="imgcss2" /></div>        </a></li>
+                        </ul>
+		     	</li>
+	     	</ul>
+	     </nav>
+
+  <button onClick="location.href='HISTORY.html'" class="button1">History</button>
+  <button onClick="location.href='INFO4.html'" class="button2">Info</button>
+<!---------------------------------------------------------------------MODAL POPUP------------------------------------------------------------------->
+<div class="modal-wrapper">
+  <div class="modal">
+      	<div class="btn-close trigger" class="circCont"><button class="circle fromMiddle" data-animation="magnify" data-remove="3000">
+			    	<span></span>
+    	</div>
+
+    		<div class="page-wrapper">
+    		  <div class="fontcolor">
+      			<h1>About</h1>
+
+      			<br><br><br><br><br><br>
+					<p>
+					<img src="ABOUT/selfpic.png" width="130px" height="130px"/>
+					<img src="hafiz.jpg" class="roundedImage" />
+					</p> <br>
+					<div class="acap">
+						<p>MUHAMMAD ASYRAF BIN ABDUL JALIL</p>
+						<p>Visual Communication Design</p>
+						<p>Student of Dankook University</p>
+						<br>
+					</div>
+					<div class="hafiz">
+						<p>MOHD NUR HAFIZ BIN MOHD MAZLAN</p>
+						<p>Computer Science Engineering</p>
+						<p>Student of Hanyang University Erica</p>
+						<br>
+					</div>		
+					<p>	With the purpose of educating people about natural disasters, this website allows people to learn about every natural disaster happened which were recorded in history, </p>
+					<p> know about type natural disasters & how to get prepared before, during & after they occur at our place with more exciting ways.</p>
+					<br>
+					<p> This website is developed as one of the final year projects by a <strong> Visual Communication Design student at Dankook University</strong> </p>
+					<p> helped by a <strong> Computer Science and Engineering student at Hanyang University Erica.</strong> Some of the data might be inaccurate </p> <p> as it was for illustration purpose. Most of the data and references were copied from these links below: </p>
+					<br><br><br><br><br><br>
+				   </div>
+				<ul style="list-style:none;">
+					<li>
+						<p><a href="https://worldhistoryproject.org/topics/natural-disasters">https://worldhistoryproject.org/topics/natural-disasters</a></p>
+					</li>
+					<li>
+						<p><a href="https://www.ready.gov/make-a-plan">https://www.ready.gov/make-a-plan</a></p>
+					</li>
+					<li>
+						<p><a href="https://www.ready.gov/kids/know-the-facts">https://www.ready.gov/kids/know-the-facts</a></p>
+					</li>
+					<li>
+						<p><a href="https://www.youtube.com/watch?v=5PZ0-03Nlzw&t=8s">https://www.ready.gov/make-a-plan</a></p>
+					</li>
+				</ul>
+
+			</div>
+  	
+  </div>
+</div>
+
+<script type="text/javascript">
+	$('.trigger').on('click', function() {
+  	$('.modal-wrapper').toggleClass('open');
+  	$('.page-wrapper').toggleClass('open');
+
+  	$('.sub-menu-parent').toggleClass('blur-it');
+  	$('.mute-audio').toggleClass('blur-it');
+  	$('video').toggleClass('blur-it');
+  	$('.button1').toggleClass('blur-it');
+  	$('.button2').toggleClass('blur-it');
+
+  	return false;
+});
+</script>
+<!----------------------------------------------------------- Javascript link -------------------------------------------------------------------------->
+<script
+  src="https://code.jquery.com/jquery-1.11.0.js"
+  integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw="
+  crossorigin="anonymous"></script>
+
+	</body>
+</html>

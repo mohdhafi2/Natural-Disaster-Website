@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic");
+html {
+}
+body {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+}
+.backbutton {
+    position: fixed;
+    z-index: 1;
+    background:url("ICONS/left-arrow-01.png") no-repeat center;
+    background-size:18px;
+    border:0;
+    width:18px;
+    height:18px;
+    text-indent:-999px;
+    top: 3%;
+    left: 2%;
+    transition: all 0.1s ease-in-out 0.1s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.backbutton:hover {
+    background:url("ICONS/left-arrow-02.png") no-repeat center;
+    background-size:20px;
+    border:0;
+    width:20px;
+    height:20px;
+    text-indent:-999px;
+    top: 3%;
+    left: 2%;
+    transition: all 0.1s ease-in-out 0.1s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+#timeline {
+  display: flex;
+  background-color: #ffffff;
+}
+#timeline:hover .tl-item {
+  width: 10%; /*Bila kita hover, panel selain panel utama jd kecil*/
+}
+
+.tl-item {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 7.6923%;
+  height: 100vh;
+  min-height: 600px;
+  color: #f2ebe0;
+  overflow: hidden;
+  transition: width 2s ease;  /*panel transition speed*/
+}
+.tl-item:before, .tl-item:after {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item:after {
+  background: rgba(160, 135, 70, 0.5);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.tl-item:before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+  z-index: 1;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0) translateY(50%);
+          transform: translate3d(0, 0, 0) translateY(50%);
+  transition: opacity 2.5s ease, -webkit-transform 2.5s ease;
+  transition: opacity 2.5s ease, transform 2.5s ease;
+  transition: opacity 2.5s ease, transform 2.5s ease, -webkit-transform 2.5s ease;
+}
+.tl-item:hover {
+  width: 100% !important;
+}
+.tl-item:hover:after {
+  opacity: 0;
+}
+.tl-item:hover:before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) translateY(0);
+          transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, -webkit-transform 1s ease 0.25s;
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+  transition: opacity 1s ease, transform 1s ease 0.25s, -webkit-transform 1s ease 0.25s;
+} 
+.tl-item:hover .tl-content {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  transition: all 1s ease 1s;  /*description transition speed*/
+}
+.tl-item:hover .tl-bg1 {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.tl-item:hover .tl-bg2 {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.tl-item:hover .tl-bg3 {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.tl-item:hover .tl-bg4 {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.tl-item:hover .tl-bg5 {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.tl-item:hover .tl-bg6 {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.tl-item:hover .tl-bg7 {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.tl-item:hover .tl-bg8 {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.tl-item:hover .tl-bg9 {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.tl-item:hover .tl-bg10 {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.tl-item:hover .tl-bg11 {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.tl-item:hover .tl-bg12 {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.tl-item:hover .tl-bg13 {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.tl-content {
+  -webkit-transform: translate3d(0, 0, 0) translateY(25px);
+          transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 5%;
+  opacity: 0;
+  line-height: 120%;
+  }
+  .tl-content ul{
+    display:table;
+    margin:0;
+    text-align: left;
+    auto;
+  }
+  .nobullet {
+    list-style: none;
+    font-weight: 700;
+  }
+.tl-content h1 {
+  font-family: 'Exo 2',sans-serif;
+  font-weight: bold;
+  font
+  text-transform: capitalize;
+  color: #ff5555;
+  font-size: 1.4rem;
+}
+.tl-content h2 {
+  font-family: 'Exo 2',sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #ff5555;
+  font-size: 1.2rem;
+  text-align: left;
+  padding-left: 24px;
+/*}
+.tl-content2 {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+ /* column-count: 3;
+  -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+ /* column-gap: 10px;*/
+}
+.tl-year {
+  position: relative;
+  transition: top ease 2s;
+  top: 50%;
+  left: 50%;
+
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  overflow-x:hidden;
+  white-space: nowrap;
+}
+
+
+.tl-item:hover .tl-year {
+  background-color: #a08746;
+  top: 5%;
+}
+
+.tl-year p {
+  font-family: 'Exo 2',sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 0;
+  text-align: center;
+}
+
+.tl-bg1 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+
+   background-image: url("PICS/NATURAL DISASTERS/drought 3.jpg");
+}
+
+.tl-bg2 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+
+  background-image: url("PICS/NATURAL DISASTERS/earthquake 1.jpg");
+}
+
+.tl-bg3 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+
+   background-image: url("PICS/NATURAL DISASTERS/extreme heat 2.jpg");
+}
+
+.tl-bg4 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+
+  background-image: url("PICS/NATURAL DISASTERS/flood 1.jpg");
+}
+
+.tl-bg5 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+
+   background-image: url("PICS/NATURAL DISASTERS/hurricanes 2.jpg");
+}
+
+.tl-bg6 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+
+  background-image: url("PICS/NATURAL DISASTERS/landslide 2.jpg");
+}
+
+.tl-bg7 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+
+   background-image: url("PICS/NATURAL DISASTERS/space weather 1.jpg");
+}
+
+.tl-bg8 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+
+  background-image: url("PICS/NATURAL DISASTERS/thunderstorm 1.jpg");
+}
+
+.tl-bg9 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+
+   background-image: url("PICS/NATURAL DISASTERS/tornado 3.jpg");
+}
+
+.tl-bg10 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+
+  background-image: url("PICS/NATURAL DISASTERS/tsunami 2.jpg");
+}
+
+.tl-bg11 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+
+   background-image: url("PICS/NATURAL DISASTERS/volcano 1.jpg");
+}
+
+.tl-bg12 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+
+  background-image: url("PICS/NATURAL DISASTERS/wildfire 3.jpg");
+}
+
+.tl-bg13 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+
+   background-image: url("PICS/NATURAL DISASTERS/winter storm 2.jpg");
+}
+
+.mute-audio {
+    z-index: 10;
+    position: fixed;
+    background:url("ICONS/muteunmute-03.png") no-repeat center;
+    background-size:19px;
+    border:0;
+    width:19px;
+    height:19px;
+    text-indent:-999px;
+    top: 3%;
+    right: 2%;
+    transition: all 0.05s ease-in-out 0.05s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.mute-audio:hover{
+    position: fixed;
+    background:url("ICONS/muteunmute-04.png") no-repeat center;
+    background-size:20px;
+    border:0;
+    width:20px;
+    height:20px;
+    text-indent:-999px;
+    top: 3%;
+    right: 2%;
+    transition: all 0.05s ease-in-out 0.05s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.unmute-audio {
+  position: fixed;
+    background:url("ICONS/muteunmute-01.png") no-repeat center;
+    background-size:19px;
+    width:19px;
+    height:19px;
+    top: 3%;
+    right: 2%;
+    transition: all 0.05s ease-in-out 0.05s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.unmute-audio:hover {
+    position: fixed;
+    background:url("ICONS/muteunmute-02.png") no-repeat center;
+    background-size:20px;
+    width:20px;
+    height:20px;
+    top: 3%;
+    right: 2%;
+    transition: all 0.05s ease-in-out 0.05s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}

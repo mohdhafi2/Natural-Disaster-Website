@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <title>KNOW NATURAL DISASTERS-Info</title>
+  <link rel="shortcut icon" type="image/png" href="OTHERS/title-06.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="INFO4.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-1.11.0.js" integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw=" crossorigin="anonymous"></script>
+
+<body>
+
+<button onClick="location.href='index.html'" class="backbutton"></button>
+ 
+</body>
+
+<style>
+{
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.t1-content2 {
+  float: left;
+  width: 100%;
+  padding: 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+</head>
+
+<body>
+  <!----------------------- iframe that doesn't play anything just to trigger the autoplay in the first load------------------------>
+<iframe src="VIDEO/silentsound.mp3" allow="autoplay" style="display:none"></iframe>
+
+<audio autoplay muted loop>
+    <source src="VIDEO/bm.mp3" type="audio/mp3">
+</audio>
+
+<button class="mute-audio"></button>
+
+<!-----------------------------------Javascript for mute and unmute audio------------------------------------------->
+<script>
+  $("audio").prop('muted', true);
+
+  $(".mute-audio").click(function () {
+      if ($("audio").prop('muted')) {
+          $("audio").prop('muted', false);
+          $(this).addClass('unmute-audio');
+
+      } else {
+          $("audio").prop('muted', true);
+          $(this).removeClass('unmute-audio');
+      }
+      console.log($("audio").prop('muted'))
+});
+</script>
+
+  <section id="timeline">
+  
+  <div class="tl-item">
+    
+    <div class="tl-bg1"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">DROUGHT</p>
+    </div>
+
+    <div class="tl-content">
+      <p>Droughts occur when there has not been enough rainfall and the water levels get low. They can happen anywhere and droughts increase the risk of other hazards like wildfires, flash floods, and possible landslides or debris flows.</p>
+      <br><br>
+      <h1>WHAT-TO-DO</h1>
+    
+    <div class="row">
+  <div class="t1-content2" style="background-color:none;">
+    <h2>Before</h2>
+<ul>
+    <li class="nobullet">Here are some easy ways to conserve water and avoid drought:</li>
+    <li>Don’t pour water down the drain! There may be another use for it, like watering indoor plants.</li>
+    <li>If you want to play in the sprinkler, or water the lawn, try not to water the driveway or sidewalk.</li>
+</ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>During</h2>
+    <ul>
+      <li>Listen to the rules from authorities. They want to make sure there’s enough water for the things we really need.</li>
+      <li>Take short showers, not baths. Showers use less water.</li>
+      <li>Don’t let the water run when you brush your teeth.</li>
+      <li>Take a break from using your outdoor water toys. When the drought ends, you can play with them again.</li>
+</ul>
+  </div>
+  </div>
+</div>
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg2"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">EARTHQUAKE</p>
+    </div>
+
+    <div class="tl-content">
+      <p>Earthquakes are the shaking, rolling or sudden shock of the earth’s surface. Earthquakes happen along cracks (called fault lines) in the earth’s surface. Earthquakes can be felt over large areas, although they usually last less than one minute. Earthquakes cannot be predicted although scientists are working on it.</p>
+      <br><br>
+      <h1>WHAT-TO-DO</h1>
+
+      <div class="row">
+  <div class="t1-content2" style="background-color:none;">
+    <h2>Before</h2>
+    <ul>
+      <li>Build an emergency kit.</li>
+      <li>Make a family communications plan.</li>
+      <li>Know the safe spots in every room; under a sturdy table or against an inside wall.</li>
+      <li>Ask your family to hold earthquake drills; drop, cover, and hold on!</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>During</h2>
+    <ul>
+      <li class="nobullet">If inside:</li>
+      <li>DROP to the ground.</li>
+      <li>Take COVER under a sturdy table or other heavy furniture. If there is nothing to get under, cover your face and head with your arms and crouch near an inside wall.</li>
+      <li>HOLD ON until the shaking stops.</li>
+      <li>STAY AWAY from windows, glass, lighting fixtures, or furniture that could fall; like bookcases.</li>
+      <li>STAY INSIDE!</li>
+      <li>Do not use elevators!</li>
+      <li class="nobullet">If outside:</li>
+      <li>Stay there. Move away from buildings, streetlights, and wires.</li>
+      <li>Stay out in the open until the shaking stops. Buildings could collapse and hurt you.</li>
+      <li class="nobullet">If trapped under debris:</li>
+      <li>Cover your mouth with your shirt.</li>
+      <li>Do not scream; you could breathe in dust.</li>
+      <li>Tap on a pipe or wall sorescuers can find you.</li>
+      </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>After</h2>
+    <ul>
+      <li>Expect aftershocks. They are usually not as strong but can cause damage.</li>
+      <li>Open cabinets carefully. Objects might have moved and could fall on you.</li>
+      <li>Wear long pants, long sleeves, and shoes to protect your skin from getting scratched by broken objects.</li>
+      <li>Text, don’t talk. Unless there’s a life-threatening situation, if you have a cell phone, send a text so that you don’t tie up phone lines needed by emergency workers. Plus, texting may work even if cell service is down.</li>
+</ul>
+  </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg3"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">EXTREME HEAT</p>
+    </div>
+
+    <div class="tl-content">
+     <p>Heat kills by pushing the human body beyond its limits. In extreme heat and high humidity (which is when the air has moisture and feels sticky), the body must work extra hard to maintain a normal temperature and keep the body comfortable. A heat wave is an extended period of extreme heat, and there is often high humidity. These conditions can be dangerous for people who don’t take care of themselves properly.</p>
+      <br><br>
+      <h1>WHAT-TO-DO</h1>
+    <div class="row">
+  <div class="t1-content2" style="background-color:none;">
+    <h2>Before</h2>
+    <ul>
+      <li>Build an emergency kit.</li>
+      <li>Make a family communications plan.</li>
+      <li>Keep shades closed on windows that get morning or afternoon sun.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>During</h2>
+    <ul>
+      <li>Never sit in a parked car or leave pets in a parked car.</li>
+      <li>Stay inside an air-conditioned area as much as possible.</li>
+      <li>Play indoor games and sports.</li>
+      <li>Drink lots of water. This is your body’s air conditioning!</li>
+      <li>Wear loose-fitting clothes in light colors. Did you know dark colors absorb the sun’s rays?</li>
+      <li>Wear a hat with a wide brim to protect your face and head.</li>
+      <li>Spend time in local places with air conditioning, like the library or movie theater.</li>
+      </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>After</h2>
+    <ul>
+      <li>Don’t eat any food that was in the refrigerator if you were without power for more than a day. Food could have spoiled
+and will make you sick.</li>
+</ul>
+  </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg4"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">FLOOD</p>
+    </div>
+
+    <div class="tl-content">
+ <p>Flooding happens during heavy rains, when rivers overflow, when ocean waves come onshore, when snow melts too fast, or when dams or levees break. This is the most common natural-weather event. Flooding may be only a few inches of water, or it may cover a house to the rooftop. Floods that happen very quickly are called flash floods.</p>
+      <br><br>
+      <h1>WHAT-TO-DO</h1>
+    <div class="row">
+  <div class="t1-content2" style="background-color:none;">
+    <h2>Before</h2>
+    <ul>
+      <li>Build an emergency kit.</li>
+      <li>Make a family communications plan.</li>
+      <li>Tell an adult if you hear a flood warning on the TV or radio.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>During</h2>
+    <ul>
+      <li>Listen to authorities and safety officials.</li>
+      <li>If there is any possibility of a flash flood, move immediately to higher ground.</li>
+      <li>Help your family move important items to an upper floor.</li>
+      <li>Do not walk through moving water. Even 6” of water can make you fall.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>After</h2>
+    <ul>
+      <li>Stay away from flood water. It could be contaminated, meaning contain dangerous substances.</li>
+      <li>Stay away from moving water. It can knock you off your feet.</li>
+      <li>Stay out of the way of emergency workers so they can do their job easily.</li>
+</ul>
+  </div>
+    </div>
+  </div>
+  </div>
+
+   <div class="tl-item">
+    
+    <div class="tl-bg5"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">HURRICANES</p>
+    </div>
+
+    <div class="tl-content">
+      <p>Hurricanes are severe tropical storms that form in the southern Atlantic Ocean, Caribbean Sea, Gulf of
+Mexico, and in the eastern Pacific Ocean. They gather heat and energy through contact with warm ocean
+waters. Evaporation from the seawater increases their power. Hurricanes rotate in a counter-clockwise
+direction around an “eye.” Hurricanes have winds at least 74 miles per hour. When hurricanes come onto
+land, their heavy rain, strong winds, and large waves can damage buildings, trees, and cars.</p>
+      <br><br>
+      <h1>WHAT-TO-DO</h1>
+    <div class="row">
+  <div class="t1-content2" style="background-color:none;">
+    <h2>Before</h2>
+    <ul>
+      <li>Build an emergency kit.</li>
+      <li>Make a family communications plan.</li>
+      <li>Help your parents bring in outdoor items like potted plants, patio furniture, decorations, and garbage cans. They can fly in strong winds!</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>During</h2>
+    <ul>
+      <li>Don’t open the refrigerator or freezer. In case you lose power, you want the cold air to stay in!</li>
+      <li>Stay away from windows and glass doors. They could break and hurt you.</li>
+      <li>Don’t go outside when the rain or winds stop. This is the eye of the storm, or a short “rest,” and it will start again.</li>
+      <li>If need be, stay inside a closet or a room without windows.</li>
+      <li>You can also lie on the floor under a table or sturdy object.</li>
+      <li>Listen to your parents or safety authorities for important instructions.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>After</h2>
+    <ul>
+      <li>Don’t go outside without a grown-up.</li>
+      <li>Don’t go near any wires that are loose or dangling. They could electrocute you!</li>
+      <li>Tell your parents if you smell gas.</li>
+      <li>Don’t drink water from the faucet unless your parents say it’s okay.</li>
+      <li>Text, don’t talk. Unless there’s a life-threatening situation, if you have a cell phone, send a text so that you don’t tie up phone lines needed by emergency workers. Plus, texting may work even if cell service is down.</li>
+</ul>
+  </div>
+    </div>
+  </div>
+  </div>
+
+   <div class="tl-item">
+    
+    <div class="tl-bg6"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">LANDSLIDES</p>
+    </div>
+
+    <div class="tl-content">
+      <p>In a landslide, masses of rock, earth or debris (rubble or trash) move down a slope. Debris and mud flows
+are rivers of rock, earth, and other debris soaked with water. They develop when water builds up quickly
+in the ground, during heavy rainfall or rapid snowmelt and changes the earth into a flowing river of mud
+or “slurry.” They can occur quickly, striking fast with little or no warning. They also can travel several miles
+from their source, growing in size as they pick up trees, boulders, cars, and other materials.</p>
+      <br><br>
+      <h1>WHAT-TO-DO</h1>
+    <div class="row">
+  <div class="t1-content2" style="background-color:none;">
+    <h2>Before</h2>
+    <ul>
+      <li>Build an emergency kit.</li>
+      <li>Make a family communications plan.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>During</h2>
+    <ul>
+      <li>Stay alert and awake. Many people die from landslides when they are sleeping.</li>
+      <li>Listen for unusual sounds like trees cracking or boulders knocking together. If you hear something, tell an adult immediately!</li>
+      <li>Move away from the path of a landslide or debris flow as fast as you can.</li>
+      <li>Avoid river valleys and low-lying areas.</li>
+      <li>If you can’t escape, curl into a tight ball and cover your head with your hands and arms.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>After</h2>
+    <ul>
+      <li>Stay away from the slide area. There may be additional slides.</li>
+      <li>If you see dangling or loose wires, stay away and tell an adult.</li>
+      <li>Listen to safety officials about where it’s safe to go.</li>
+      <li>Text, don’t talk. Unless there’s a life-threatening situation, send a text so that you don’t tie up phone lines needed by emergency workers. Plus, texting may work even if cell service is down.</li>
+</ul>
+  </div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="tl-item">
+    
+    <div class="tl-bg7"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">SPACE WEATHER</p>
+    </div>
+
+    <div class="tl-content">
+      <p>Space weather refers to the changing conditions of the sun and space that can affect the technology we use on Earth. It can affect satellites – which control phones, Internet and TV. And it can affect the electric grid, leading to blackouts. Sudden bursts of elements from the sun’s atmosphere, along with solar flares, cause space weather here on Earth.</p>
+      <br><br>
+      <h1>WHAT-TO-DO</h1>
+     <div class="row">
+  <div class="t1-content2" style="background-color:none;">
+    <h2>Before</h2>
+    <ul>
+      <li>Build an emergency kit.</li>
+      <li>Make a family communications plan.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>During</h2>
+    <ul>
+      <li>Use as little electricity as possible so power companies don’t have to impose a blackout. How? Shut the TV, don’t turn on lights unless you have to, and turn off the computer.</li>
+      <li>Don’t use the telephone unless you have to.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>After</h2>
+    <ul>
+      <li>If your home lost power, don’t eat any food that was in the refrigerator. Food could have spoiled and will make you sick.</li>
+
+</ul>
+  </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg8"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">THUNDERSTORM</p>
+    </div>
+
+    <div class="tl-content">
+      <p>All thunderstorms are dangerous because every thunderstorm produces lightning. Lightning can kill or seriously hurt people. Thunderstorms are also dangerous because they can lead to flash floods.</p>
+      <br><br>
+      <h1>WHAT-TO-DO</h1>
+     <div class="row">
+  <div class="t1-content2" style="background-color:none;">
+    <h2>Before</h2>
+    <ul>
+      <li>Build an emergency kit.</li>
+      <li>Make a family communications plan.</li>
+      <li>Use the 30/30 rule! Go indoors if you see lightning and can’t count to 30 before hearing thunder. Stay inside for 30 minutes after hearing the last clap of thunder.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>During</h2>
+    <ul>
+      <li>Stay inside.</li>
+      <li>Don’t use items that plug into electrical outlets. Power surges from lightning can come through the cords and hurt you.</li>
+      <li>Don’t wash your hands, take a bath or take a shower. Faucets can conduct electricity.</li>
+      <li>Stay away from windows and doors.</li>
+      <li>Don’t lie on concrete floors or lean against concrete walls. They conduct electricity.</li>
+      <li>Don’t touch anything metal outside – bikes, playgrounds, fences.</li>
+      <li>Stay away from open fields, hills, or the beach.</li>
+      <li>Don’t stand near “lightning rods,” like tall trees in an open area, or flagpoles.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>After</h2>
+    <ul>
+      <li>Stay away from loose or dangling power lines.</li>
+      <li>Stay away from areas damaged by the storm or flood waters.</li>
+
+</ul>
+  </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg9"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">TORNADO</p>
+    </div>
+
+    <div class="tl-content">
+      <p>Tornadoes are nature’s most violent storms. They come from powerful thunderstorms. They appear as a funnel- or cone-shaped cloud with winds that can reach up to 300 miles per hour. They cause damage when they touch down on the ground. They can damage an area one mile wide and 50 miles long. Before tornadoes hit, the wind may die down, and the air may become very still. They may also strike quickly, with little or no warning.</p>
+      <br><br>
+      <h1>WHAT-TO-DO</h1>
+    <div class="row">
+  <div class="t1-content2" style="background-color:none;">
+    <h2>Before</h2>
+    <ul>
+      <li>Build an emergency kit.</li>
+      <li>Make a family communications plan.</li>
+      <li>Look for the following danger signs: — dark, greenish sky; large hail; large, dark, low-lying cloud; loud roar, like a freight train</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>During</h2>
+    <ul>
+      <li class="nobullet">If you are in a building:</li>
+      <li>Go to a safe room such as a basement, cellar, or the lowest building level.</li>
+      <li>If there is no basement, go to an inside room like a closet or hallway.</li>
+      <li>Stay away from corners, windows, doors, and outside walls.</li>
+      <li>Do not open windows.</li>
+      <li>Put on sturdy shoes.</li>
+      <li>Protect your head.</li>
+      <li class="nobullet">If you are in a trailer or mobile home:</li>
+      <li>Get out immediately and go to the lowest floor of a sturdy nearby building or storm shelter.</li>
+      <li class="nobullet">If you are outside with no shelter nearby:</li>
+      <li>Get into a vehicle and buckle your seatbelt. Put your head down below the windows and cover your head with your hands and a blanket, coat, or other cushion.</li>
+      <li>If there is no car or shelter, try to find a ditch or area lower than the ground and lie down. You are safer in a low, flat location than under a bridge or highway overpass.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>After</h2>
+    <ul>
+      <li>Wear sturdy shoes or boots. There may be broken glass or nails on the ground that could hurt you if you stepped on it. Never go near or touch dangling or loose power lines. They could electrocute you.</li>
+      <li>Text, don’t talk. Unless there’s a life-threatening situation, if you have a cell phone, send a text so that you don’t tie up phone lines needed by emergency workers. Plus, texting may work even if cell service is down.</li>
+
+</ul>
+  </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg10"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">TSUNAMI</p>
+    </div>
+
+    <div class="tl-content">
+      <p>A tsunami (pronounced soo-nahm-ee) is a series of giant waves that happen after underwater movement due to a variety of natural events such as earthquakes, volcanic eruptions, landslides, and meteorites. The waves travel in all directions from the area of disturbance, much like the ripples that happen after throwing a rock. The waves may travel in the open sea as fast as 450 miles per hour. As the big waves approach shallow waters along the coast they grow to a great height and smash into the shore. They can be as high as 100 feet. They can cause a lot of destruction on the shore. “Tsunami” is a Japanese word. Tsu means “harbor” and nami means “wave.”</p>
+      <br><br>
+      <h1>WHAT-TO-DO</h1>
+    <div class="row">
+  <div class="t1-content2" style="background-color:none;">
+    <h2>Before</h2>
+    <ul>
+      <li>Build an emergency kit.</li>
+      <li>Make a family communications plan.</li>
+      <li>If the water recedes from the shoreline, or goes out to sea, in a very noticeable way, get away from the area immediately. This is nature’s warning that a tsunami is coming.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>During</h2>
+    <ul>
+      <li>Listen to evacuation orders and leave the area immediately.</li>
+      <li>Take any pets with you.</li>
+      <li>Move inland (away from the ocean) and towards higher ground.</li>
+      <li>Stay away from the beach. Never go down to the water to watch a tsunami come in. If you can see the wave, you are too close to escape it.</li>
+      <li>If the water recedes from the shoreline or goes out to sea in a very noticeable way, get away from the area immediately. This is nature’s warning that a tsunami is coming.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>After</h2>
+    <ul>
+      <li>Don’t return home unless officials tell you it is safe to do so. Tsunami waves can continue for hours and the next wave may be more dangerous than the first.</li>
+      <li>Stay away from debris in the water. It could be dangerous.</li>
+      <li>Stay out of any building with water around it. Water can make floors crack or walls collapse.</li>
+      <li>Text, don’t talk. Unless there’s a life-threatening situation, if you have a cell phone, send a text so that you don’t tie up phone lines needed by emergency workers. Plus, texting may work even if cell service is down.</li>
+</ul>
+  </div>
+    </div>
+  </div>
+  </div>
+    
+  <div class="tl-item">
+    
+    <div class="tl-bg11"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">VOLCANO</p>
+    </div>
+
+    <div class="tl-content">
+     <p>A volcano is a mountain that opens downward to a pool of molten, or melted, rock below the surface of the Earth.
+Unlike most mountains, which are pushed up from below, volcanoes are vents through which molten rock escapes to
+the Earth’s surface. When pressure from gases within the molten rock becomes too great, an eruption occurs. Eruptions
+can be quiet or explosive. There may be lava flows, flattened landscapes, poisonous gases, and flying rock and ash that
+can sometimes travel hundreds of miles downwind. Because of their intense heat, lava flows are great fire hazards.
+Lava flows destroy everything in their path but most move slowly enough that people can move out of the way.</p>
+      <br><br>
+      <h1>WHAT-TO-DO</h1>
+    <div class="row">
+  <div class="t1-content2" style="background-color:none;">
+    <h2>Before</h2>
+    <ul>
+      <li>Build an emergency kit.</li>
+      <li>Make a family communications plan.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>During</h2>
+    <ul>
+      <li>Follow evacuation orders from emergency officials.</li>
+      <li>Look out for mudflows. Look upstream before you cross any bridges to make sure a mudflow is not coming. If it is, do not cross the bridge. The mudflow could destroy it.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>After</h2>
+    <ul>
+      <li>Listen to safety officials.</li>
+      <li>Text, don’t talk. Unless there’s a life-threatening situation, if you have a cell phone, send a text so that you don’t tie up phone lines needed by emergency workers. Plus, texting may work even if cell service is down.</li>
+
+</ul>
+  </div>
+    </div>
+  </div>
+  </div>
+     
+  <div class="tl-item">
+    
+    <div class="tl-bg12"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">WILDFIRE</p>
+    </div>
+
+    <div class="tl-content">
+      <p>A wildfire is a fire that rages out of control in the wilderness, like a forest or countryside. Wildfires often begin unnoticed. These fires are usually triggered by lightning or accidents, such as campers or hikers that did not take care of their campfire properly. They spread quickly, igniting brush, trees, and homes.</p>
+      <br><br>
+      <h1>WHAT-TO-DO</h1>
+    <div class="row">
+  <div class="t1-content2" style="background-color:none;">
+    <h2>Before</h2>
+    <ul>
+      <li>Build an emergency kit.</li>
+      <li>Make a family communications plan.</li>
+      <li>Make sure your family has smoke alarms on every level of your home, especially in bedrooms. Ask your parents to check them every month and to change the batteries every year.</li>
+      <li>If you don’t have a smoke alarm, check with your local fire department about getting a free one.</li>
+      <li>Help your parents to rake the lawn and rid it of leaves and twigs. These can catch fire if a wildfire is near your home.</li>
+      <li>Never play with matches. You could accidentally start a fire.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>During</h2>
+    <ul>
+      <li>Listen to emergency officials if they say to evacuate.</li>
+      <li>If you see a wildfire, call 911. You may be the first person to have spotted it!</li>
+      <li>Help your parents fill outdoor tubs, pools, or garbage cans with water.</li>
+      <li>Help your parents place important papers and family photographs inside the car, inside the garage. Put your pets in the car, too, so if you need to leave immediately, everything is packed.</li>
+      <li>Put important things that won’t be damaged by water in a pool or pond.</li>
+      <li>Turn on outside lights and all the lights on inside the house. This will help it be seen in heavy smoke.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>After</h2>
+    <ul>
+      <li>If you are at home, keep a “fire watch.” That means, look for smoke or sparks throughout the house. If you see anything, tell a grown-up immediately!</li>
+      <li>If you have evacuated, do not go home until safety officials say it’s okay.</li>
+      <li>Stay away from downed or dangling power lines. They could electrocute you.</li>
+      <li>Look out for ash pits or hidden embers. Stay away. They could burn you.</li>
+      <li>Do not use water from the faucet unless emergency officials say it’s okay.</li>
+</ul>
+  </div>
+    </div>
+  </div>
+  </div>
+   
+  <div class="tl-item">
+    
+    <div class="tl-bg13"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">WINTER STORM</p>
+    </div>
+
+    <div class="tl-content">
+     <p>Winter storms can range from a normal snow over a few hours to a blizzard with blinding, wind-driven snow
+that lasts for several days. Many winter storms bring dangerously low temperatures and sometimes, strong
+winds, icing, sleet, and freezing rain. One of the main concerns is that winter weather can knock out heat,
+power, and communication, sometimes for days at a time. Heavy snowfall and extreme cold can have serious
+effects on an entire region. Icy roadways can cause serious accidents, and sometimes people die from being in
+really cold temperatures for too long.</p>
+      <br><br>
+      <h1>WHAT-TO-DO</h1>
+    <div class="row">
+  <div class="t1-content2" style="background-color:none;">
+    <h2>Before</h2>
+    <ul>
+      <li>Build an emergency kit.</li>
+      <li>Make a family communications plan.</li>
+      <li>Help your parents sprinkle sand on sidewalks and walkways. This helps to make them less slippery.</li>
+      <li>Make sure you dress warmly and have extra blankets!</li>
+      <li>Bring pets inside.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>During</h2>
+    <ul>
+      <li>Stay inside! Sidewalks can be very slippery and you can hurt yourself if you fall.</li>
+      <li>If you are outside helping to shovel snow, make sure you wear a hat. It helps keep you from losing body heat.</li>
+      <li>Wear mittens. They’re warmer than gloves.</li>
+      <li>Cover your mouth with a scarf to protect your lungs from the cold air.</li>
+      <li>Put on dry clothes as soon as you come inside.</li>
+      <li>If you can’t feel your fingers, toes, ears or nose, or they appear pale white, tell a grown-up immediately. You need to see a doctor.</li>
+      <li>Tell a grown up immediately if you can’t stop shivering, have trouble remembering things, feel tired or talk funny. You may have hypothermia which can be very dangerous.</li>
+    </ul>
+  </div>
+    <div class="t1-content2" style="background-color:none;">
+    <h2>After</h2>
+    <ul>
+      <li>Continue to wear layers, a hat, scarf and mittens, or gloves. These will help to keep you warm and protect you from frostbite.</li>
+
+</ul>
+  </div>
+    </div>
+  </div>
+  </div>
+      
+</section>
+  
+  
+<script
+  src="https://code.jquery.com/jquery-1.11.0.js"
+  integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw="
+  crossorigin="anonymous"></script>
+  
+</body>
+
+</html>

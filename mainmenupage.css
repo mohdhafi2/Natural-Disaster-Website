@@ -1,0 +1,468 @@
+body{
+  	font-family: 'Exo 2', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a:link{
+  font-weight: 700;
+  font-size: 12pt;
+	color:white;
+	transition: all 0.05s ease-in-out 0.05s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+a:visited{
+	color: white;
+}
+
+a:hover{	
+	color:#ff5555;
+	transition: all 0.05s ease-in-out 0.05s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+/* Old img centered */
+/*.MyImg{
+  height: 60%;
+  width: 50%;
+  position: fixed;
+  bottom: 27%;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}*/
+/*-----------------------------------------VIDEO SECTION CSS ---------------------------------------*/
+#MyVideo {
+  z-index: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.mute-audio {
+	  position: fixed;
+    background:url("ICONS/muteunmute-03.png") no-repeat center;
+    background-size:19px;
+    border:0;
+    width:19px;
+    height:19px;
+    text-indent:-999px;
+    top: 3%;
+  	right: 2%;
+  	transition: all 0.05s ease-in-out 0.05s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.mute-audio:hover{
+    position: fixed;
+    background:url("ICONS/muteunmute-04.png") no-repeat center;
+    background-size:20px;
+    border:0;
+    width:20px;
+    height:20px;
+    text-indent:-999px;
+    top: 3%;
+    right: 2%;
+    transition: all 0.05s ease-in-out 0.05s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.unmute-audio {
+	position: fixed;
+    background:url("ICONS/muteunmute-01.png") no-repeat center;
+    background-size:19px;
+    width:19px;
+    height:19px;
+    top: 3%;
+  	right: 2%;
+  	transition: all 0.05s ease-in-out 0.05s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.unmute-audio:hover {
+    position: fixed;
+    background:url("ICONS/muteunmute-02.png") no-repeat center;
+    background-size:20px;
+    width:20px;
+    height:20px;
+    top: 3%;
+    right: 2%;
+    transition: all 0.05s ease-in-out 0.05s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+
+.button1 { 
+  font-family: 'Exo 2', sans-serif;
+  padding: 4px 0px;
+  font-weight: bold;
+  font-size: 11pt;
+  position: fixed;
+  color: white;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 20px;
+  bottom:13%;
+  width: 5%;
+  height: 4%;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.1s ease-in-out 0.1s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.button2 {
+  font-family: 'Exo 2', sans-serif;
+  padding: 4px 0px;
+  font-weight: bold;
+  font-size: 11pt;
+  position: fixed;
+  color: white;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 20px;
+  bottom:7%;
+  width: 4%;
+  height: 4%;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.1s ease-in-out 0.1s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+.button1:hover {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: bold;
+  font-size: 12pt;
+  background-color: #ff5555;
+  border: 2px solid #ff5555;
+  border-radius: 20px;
+  color: white;
+  transition: all 0.1s ease-in-out 0.1s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.button2:hover {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: bold;
+  font-size: 12pt;
+  background-color: #ff5555;
+  border: 2px solid #ff5555;
+  border-radius: 20px;
+  color: white;
+  transition: all 0.1s ease-in-out 0.1s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+/* --------------------------------- Share section css -------------------------------------*/
+.sub-menu-parent { 
+  position: relative;
+  display: inline-block;
+} 
+.sub-menu { 
+  visibility: hidden; /* hides sub-menu */
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-1em);
+  z-index: 1;
+  transition: all 0.3s ease-in-out 0.3s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.sub-menu-parent:focus .sub-menu,
+.sub-menu-parent:focus-within .sub-menu,
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.1s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+/* presentational */
+body { padding: 1%; font: 14px/0.6 sans-serif; }
+
+nav a { color: #E00; display: inline-block; padding: 0.2em 1em; text-decoration: none; }
+nav a:hover { color: #ff5555; }
+nav ul,
+nav ul li { list-style-type: none; padding: 0; margin: 0; }
+
+nav > ul { background: none; text-align: center; }
+nav > ul > li { display: block;  }
+nav > ul > li:first-child { border-left: none; }
+
+.sub-menu {
+  background: #f2ebe0;
+  border-radius: 3px;
+  width: 70px;
+  opacity: 10%;
+}
+
+.imgcss1{
+  width: 30%;
+  background:url("ICONS/facebooklogo.png") no-repeat center;
+  background-size:18px;
+  border:0;
+  width:18px;
+  height:18px;
+  text-indent:-999px;
+}
+
+.imgcss1:hover{
+  width: 30%;
+  background:url("ICONS/facebooklogo2.png") no-repeat center;
+  background-size:18px;
+  border:0;
+  width:18px;
+  height:18px;
+  text-indent:-999px;
+}
+
+.imgcss2{
+  width: 30%;
+  background:url("ICONS/twitterlogo.png") no-repeat center;
+  background-size:18px;
+  border:0;
+  width:18px;
+  height:18px;
+  text-indent:-999px;
+}
+
+.imgcss2:hover{
+  width: 30%;
+  background:url("ICONS/twitterlogo2.png") no-repeat center;
+  background-size:18px;
+  border:0;
+  width:18px;
+  height:18px;
+  text-indent:-999px;
+}
+/*----------------------------------- end of Share styling-------------------------------------*/
+
+/*----------------------------------- ABOUT POPUP (MODAL)-------------------------------------*/
+.modal-wrapper {          /*Blur section*/
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+
+}
+
+.modal-wrapper.open {
+  opacity: 0.9;
+  visibility: visible;
+}
+
+.modal {            /*modal box*/
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  border-radius: 7px;
+
+  background: #473c1f;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  text-align: center;
+  font-family: 'Exo 2', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/*
+.btn-close {
+  display: block;
+  text-align: center;
+  color: #000;
+  padding-top: 4px;
+}*/
+
+.blur-it {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+.fontcolor{
+  color: white;
+}
+
+
+/*-------------------------------------- FROM ABOUTPAGE.css ----------------------------*/
+h1 {
+  display: block;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 800;
+  margin: 90px 0px 0px 0px;
+}
+
+.container {
+  -moz-perspective: 2000;
+  -webkit-perspective: 2000;
+  perspective: 1000;
+  max-width: 1920px;
+  max-height: 1080px;
+  display: inline-block;
+}
+
+.circCont {
+  display: inline-block;
+}
+
+.circle {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: 2.5px solid transparent;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin: 20px 10px;
+}
+.circle:after {
+  width: 18px;
+  height: 3px;
+  background-color: #ff5555;
+  content: "";
+  left: 50%;
+  top: 50%;
+  margin-left: -5px;
+  margin-top: 2px;
+  position: absolute;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  /*@include transform-origin(100%,100%);*/
+}
+.circle:before {
+  left: 50%;
+  top: 50%;
+  margin-left: -5px;
+  margin-top: 2px;
+  width: 18px;
+  height: 3px;
+  background-color: #ff5555;
+  content: "";
+  position: absolute;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  /*@include transform-origin(0%,0%);*/
+}
+
+.circle[data-animation="magnify"]:not(.magnify) {
+  -moz-transition: ease-in-out 100ms;
+  -o-transition: ease-in-out 100ms;
+  -webkit-transition: ease-in-out 100ms;
+  transition: ease-in-out 100ms;
+}
+.circle[data-animation="magnify"]:not(.magnify):hover {
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.circle.magnify {
+  -moz-transition: ease-in-out 200ms;
+  -o-transition: ease-in-out 200ms;
+  -webkit-transition: ease-in-out 200ms;
+  transition: ease-in-out 200ms;
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity: 0;
+}
+
+.fromMiddle:before, .fromMiddle:after {
+  z-index: 9999;
+  -moz-transition-delay: 150ms;
+  -o-transition-delay: 150ms;
+  -webkit-transition-delay: 150ms;
+  transition-delay: 150ms;
+  -moz-transition: ease-in-out 400ms;
+  -o-transition: ease-in-out 400ms;
+  -webkit-transition: ease-in-out 400ms;
+  transition: ease-in-out 400ms;
+}
+.fromMiddle span {
+  width: 38px;
+  height: 38px;
+  background-color: #ff5555;
+  display: inline-block;
+  position: absolute;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  left: -2px;
+  top: -2px;
+  z-index: -9999;
+  -moz-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  -webkit-transform: scale(0.2);
+  transform: scale(0.2);
+  opacity: 0;
+  -moz-transition: ease-in-out 300ms;
+  -o-transition: ease-in-out 300ms;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
+}
+
+.fromMiddle:hover:before, .fromMiddle:hover:after {
+  position: absolute;
+  background-color: #ffffff;
+}
+.fromMiddle:hover span {
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 1;
+}
+
+/*----------------------------------- END OF ABOUT POPUP (MODAL)-------------------------------------*/
+
+.roundedImage {
+    background: url(http://placehold.it/50x50);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:100px;
+    width:130px;
+    height:130px;
+
+    margin-left: 13%;
+}
+
+.acap{
+  display: inline-block;
+  margin-right: 4%;
+}
+
+.hafiz{
+  display: inline-block;
+  margin-left: 4%;
+}
